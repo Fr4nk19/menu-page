@@ -23,6 +23,7 @@ function App() {
 
         function showTabContent(i = 0) {
           content[i].style.display = 'grid';
+          content[i].style.transition = '0.5s ease all';
           tab[i].classList.add('active');
         }
 
