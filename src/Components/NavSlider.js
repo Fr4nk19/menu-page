@@ -6,8 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 //import fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUtensils, faCodeFork } from '@fortawesome/free-solid-svg-icons'
+import { faUtensils } from '@fortawesome/free-solid-svg-icons'
 
+const urlLinks = '#'
 
 export default function NavSlider() {
     return (
@@ -16,15 +17,23 @@ export default function NavSlider() {
               // install Swiper modules
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={50}
-              slidesPerView={3}
               navigation
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log('slide change')}
               className="swiper-container dish_slider"
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+              }}
             >
-            <SwiperSlide><a className="link"> 
+
+            <SwiperSlide><a href={urlLinks} className="link" > 
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
@@ -33,7 +42,8 @@ export default function NavSlider() {
            </span>
             </a>
             </SwiperSlide>
-            <SwiperSlide><a className="link">
+
+            <SwiperSlide><a  href={urlLinks} className="link">
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
@@ -41,9 +51,69 @@ export default function NavSlider() {
                 Main Dishes
            </span>
             </a></SwiperSlide>
-            <SwiperSlide><a className="link">England</a></SwiperSlide>
-            <SwiperSlide><a className="link">Portugal</a></SwiperSlide>
-            <SwiperSlide><a className="link">El Salvador</a></SwiperSlide>
+
+            <SwiperSlide><a href={urlLinks} className="link">            
+            <span className='wrap_icon'>
+                <FontAwesomeIcon icon={faUtensils} />
+            </span>
+           <span className='wrap_text'>
+                Traditional
+           </span></a></SwiperSlide>
+
+            <SwiperSlide><a href={urlLinks} className="link">
+            <span className='wrap_icon'>
+                <FontAwesomeIcon icon={faUtensils} />
+            </span>
+           <span className='wrap_text'>
+                Soups
+           </span>
+            </a></SwiperSlide>
+
+            <SwiperSlide><a href={urlLinks} className="link">
+            <span className='wrap_icon'>
+                <FontAwesomeIcon icon={faUtensils} />
+            </span>
+           <span className='wrap_text'>
+                Salads
+           </span>
+            </a></SwiperSlide>
+
+            <SwiperSlide><a href={urlLinks} className="link">
+            <span className='wrap_icon'>
+                <FontAwesomeIcon icon={faUtensils} />
+            </span>
+           <span className='wrap_text'>
+                Desserts
+           </span>
+            </a></SwiperSlide>
+
+            <SwiperSlide><a href={urlLinks} className="link">
+            <span className='wrap_icon'>
+                <FontAwesomeIcon icon={faUtensils} />
+            </span>
+           <span className='wrap_text'>
+                Típicos
+           </span>
+            </a></SwiperSlide>
+
+            <SwiperSlide><a href={urlLinks} className="link">
+            <span className='wrap_icon'>
+                <FontAwesomeIcon icon={faUtensils} />
+            </span>
+           <span className='wrap_text'>
+                Kids
+           </span>
+            </a></SwiperSlide>
+
+            <SwiperSlide><a href={urlLinks} className="link">
+            <span className='wrap_icon'>
+                <FontAwesomeIcon icon={faUtensils} />
+            </span>
+           <span className='wrap_text'>
+                Extras
+           </span>
+            </a></SwiperSlide>
+
             </Swiper>
       </>
     )
