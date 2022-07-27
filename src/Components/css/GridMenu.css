@@ -2,11 +2,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
     margin-top: 60px;
-transition: 0.5s ease all;
-  }
+    transition: 0.5s ease all;
+    padding: 0 20px;
+}
     .box_dish {
         background: #fff;
         display: block;
