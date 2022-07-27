@@ -30,14 +30,6 @@ body {
    font-weight: bold;
   }
   
-  a {
-  cursor: pointer;
-  decoration: none;
-  display: block;
-  text-align: center;
-  }
-  
-
   
   img {
   height: 100%;
@@ -46,23 +38,29 @@ body {
   
   }
   
-  .active {
-  text-decoration: underline;
-  }
+
   .swiper {
   width: 600px;
-  /* height: 300px; */
+  padding: 30px 0!important;
   }
-  a.link {
+  .link {
     display: flex;
     flex-flow: column;
     align-items: center;
-    border: 1px solid #000;
     max-width: 95px;
     margin: 0 auto;
     padding: 12px 0px;
     border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 18px 7px rgba(100,185,235,0.3);
+-webkit-box-shadow: 0px 0px 18px 7px rgba(100,185,235,0.3);
+-moz-box-shadow: 0px 0px 18px 7px rgba(100,185,235,0.3);
+transform: 0.5s ease all;
   }
+  .active {
+    background: #64b9eb;
+    color: #fff;
+    }
   span.wrap_icon {
     margin-bottom: 15px;
     font-size: 30px;

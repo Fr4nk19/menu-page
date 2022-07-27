@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUtensils } from '@fortawesome/free-solid-svg-icons'
 
-const urlLinks = '#'
+
 
 export default function NavSlider() {
     return (
@@ -16,7 +16,7 @@ export default function NavSlider() {
             <Swiper
               // install Swiper modules
               modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={50}
+              spaceBetween={0}
               navigation
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
@@ -33,86 +33,86 @@ export default function NavSlider() {
               }}
             >
 
-            <SwiperSlide><a href={urlLinks} className="link" > 
+            <SwiperSlide><span className="link" > 
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Appetizers
            </span>
-            </a>
+            </span>
             </SwiperSlide>
 
-            <SwiperSlide><a  href={urlLinks} className="link">
+            <SwiperSlide><span className="link">
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Main Dishes
            </span>
-            </a></SwiperSlide>
+            </span></SwiperSlide>
 
-            <SwiperSlide><a href={urlLinks} className="link">            
+            <SwiperSlide><span className="link">            
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Traditional
-           </span></a></SwiperSlide>
+           </span></span></SwiperSlide>
 
-            <SwiperSlide><a href={urlLinks} className="link">
+            <SwiperSlide><span className="link">
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Soups
            </span>
-            </a></SwiperSlide>
+            </span></SwiperSlide>
 
-            <SwiperSlide><a href={urlLinks} className="link">
+            <SwiperSlide><span className="link">
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Salads
            </span>
-            </a></SwiperSlide>
+            </span></SwiperSlide>
 
-            <SwiperSlide><a href={urlLinks} className="link">
+            <SwiperSlide><span className="link">
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Desserts
            </span>
-            </a></SwiperSlide>
+            </span></SwiperSlide>
 
-            <SwiperSlide><a href={urlLinks} className="link">
+            <SwiperSlide><span className="link">
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Típicos
            </span>
-            </a></SwiperSlide>
+            </span></SwiperSlide>
 
-            <SwiperSlide><a href={urlLinks} className="link">
+            <SwiperSlide><span className="link">
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Kids
            </span>
-            </a></SwiperSlide>
+            </span></SwiperSlide>
 
-            <SwiperSlide><a href={urlLinks} className="link">
+            <SwiperSlide><span className="link">
             <span className='wrap_icon'>
                 <FontAwesomeIcon icon={faUtensils} />
             </span>
            <span className='wrap_text'>
                 Extras
            </span>
-            </a></SwiperSlide>
+            </span></SwiperSlide>
 
             </Swiper>
       </>
