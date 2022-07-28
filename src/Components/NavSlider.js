@@ -1,14 +1,20 @@
+//import component styles
+import './css/NavSlider.css';
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-//import fontawesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUtensils } from '@fortawesome/free-solid-svg-icons'
-
-
+import ceviche  from './assets/images/ceviche.png';
+import mainDish from './assets/images/main_dish.png';
+import camaron from './assets/images/camaron.png';
+import soup from './assets/images/soup.png';
+import salad from './assets/images/salad.png';
+import desert from './assets/images/desert.png';
+import tipico from './assets/images/tipico.png';
+import kid from './assets/images/kids.png';
+import tortilla from './assets/images/tortilla.png';
 
 export default function NavSlider() {
     return (
@@ -28,14 +34,14 @@ export default function NavSlider() {
                   slidesPerView: 1,
                 },
                 768: {
-                  slidesPerView: 3,
+                  slidesPerView: 4,
                 },
               }}
             >
 
             <SwiperSlide><span className="link" > 
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+            <img src={ceviche} alt="apperitizer" />
             </span>
            <span className='wrap_text'>
                 Appetizers
@@ -45,7 +51,7 @@ export default function NavSlider() {
 
             <SwiperSlide><span className="link">
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+            <img src={mainDish} alt="mainDish" />
             </span>
            <span className='wrap_text'>
                 Main Dishes
@@ -54,7 +60,7 @@ export default function NavSlider() {
 
             <SwiperSlide><span className="link">            
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+           <img src={camaron} alt="camaron" />
             </span>
            <span className='wrap_text'>
                 Traditional
@@ -62,7 +68,7 @@ export default function NavSlider() {
 
             <SwiperSlide><span className="link">
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+            <img src={soup} alt="soup" />
             </span>
            <span className='wrap_text'>
                 Soups
@@ -71,7 +77,7 @@ export default function NavSlider() {
 
             <SwiperSlide><span className="link">
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+            <img src={salad} alt="salad" />
             </span>
            <span className='wrap_text'>
                 Salads
@@ -80,7 +86,7 @@ export default function NavSlider() {
 
             <SwiperSlide><span className="link">
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+             <img src={desert} alt="desert" />   
             </span>
            <span className='wrap_text'>
                 Desserts
@@ -89,7 +95,7 @@ export default function NavSlider() {
 
             <SwiperSlide><span className="link">
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+                <img src={tipico} alt="tipico" />
             </span>
            <span className='wrap_text'>
                 Típicos
@@ -98,7 +104,7 @@ export default function NavSlider() {
 
             <SwiperSlide><span className="link">
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+             <img src={kid} alt="kid" />
             </span>
            <span className='wrap_text'>
                 Kids
@@ -107,7 +113,7 @@ export default function NavSlider() {
 
             <SwiperSlide><span className="link">
             <span className='wrap_icon'>
-                <FontAwesomeIcon icon={faUtensils} />
+                <img src={tortilla} alt="tortilla" />
             </span>
            <span className='wrap_text'>
                 Extras

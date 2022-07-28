@@ -1,6 +1,9 @@
 import React from 'react'
+import washimi from './assets/images/platillos/washimi.png';
+import yuka from './assets/images/platillos/yuka.png';
 
-const defImage = 'https://www.bocaolas.com/wp-content/uploads/2022/07/dishwhite.png';
+
+const defImage = 'https://via.placeholder.com/373x203?text=Feature+Image';
 
 const dishes = [
     {
@@ -22,7 +25,7 @@ const dishes = [
         price : '$11.75',
     },
     {
-        featImage : defImage,
+        featImage : washimi,
         title : 'Washimi',
         description : 'Fish slices marinated in fine herbs.',
         price : '$19.00',
@@ -52,7 +55,7 @@ const dishes = [
         price : '$14.00',
     },
     {
-        featImage : defImage,
+        featImage : yuka,
         title : 'Yuka',
         description : 'Crispy yucca with pork greaves.',
         price : '$14.50',

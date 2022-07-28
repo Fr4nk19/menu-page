@@ -1,0 +1,33 @@
+.swiper {
+    width: 1200px;
+    padding: 30px 0!important;
+    max-width: 100%;
+    }
+    .link {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      max-width: 145px;
+      margin: 0 auto;
+      padding: 12px 0px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0px 0px 18px 7px rgba(100,185,235,0.3);
+  -webkit-box-shadow: 0px 0px 18px 7px rgba(100,185,235,0.3);
+  -moz-box-shadow: 0px 0px 18px 7px rgba(100,185,235,0.3);
+  transition: 0.5s ease all;
+    }
+    .active {
+      background: #64b9eb;
+      color: #fff;
+      }
+    span.wrap_icon {
+      margin-bottom: 15px;
+      font-size: 30px;
+      color: #183153;
+    }
+    .link span.wrap_text {
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+  }
