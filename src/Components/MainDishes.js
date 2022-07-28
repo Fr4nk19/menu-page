@@ -1,9 +1,13 @@
 import React from 'react'
-const defImage = 'https://www.bocaolas.com/wp-content/uploads/2022/07/dishwhite.png';
+import eloctopus from './assets/images/platillos/eloctopus.png';
+import lomitoPimienta from './assets/images/platillos/lomitopimienta.png';
+import salmon from './assets/images/platillos/salmon.png';
+import udonMar from './assets/images/platillos/udonMar.png';
+const defImage = 'https://via.placeholder.com/373x203?text=Feature+Image';
 
 const dishes = [
     {
-        featImage : defImage,
+        featImage : eloctopus,
         title : 'Elocto-pus',
         description : '6oz grilled octopus in garlic butter.',
         price : '$25.00',
@@ -27,7 +31,7 @@ const dishes = [
         price : '$25.00',
     },
     {
-        featImage : defImage,
+        featImage : salmon,
         title : 'Salmon',
         description : '8oz grilled salmon in dill butter.',
         price : '$29.00',
@@ -51,7 +55,7 @@ const dishes = [
         price : '$20.00',
     },
     {
-        featImage : defImage,
+        featImage : udonMar,
         title : 'Udon Mar',
         description : 'Japanese noodle combined with shrimp, mussels, vegetables and hot sauce.',
         price : '$25.00',
@@ -81,7 +85,7 @@ const dishes = [
         price : '$20.50',
     },
     {
-        featImage : defImage,
+        featImage : lomitoPimienta,
         title : 'Lomito Pimienta',
         description : '8oz of tenderloin fillet in a black pepper wine sauce.',
         price : '$20.50',

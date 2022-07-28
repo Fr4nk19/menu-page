@@ -1,6 +1,6 @@
 import React from 'react'
 
-const defImage = 'https://www.bocaolas.com/wp-content/uploads/2022/07/dishwhite.png';
+const defImage = 'https://via.placeholder.com/373x203?text=Feature+Image';
 
 const dishes = [
     {
