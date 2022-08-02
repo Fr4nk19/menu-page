@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import './App.css';
 import GridMenu from './Components/GridMenu';
+import HeaderSlide from './Components/HeaderSlide';
 import NavSlider from './Components/NavSlider';
-
 
 function App() {
 
@@ -45,7 +45,8 @@ function App() {
   });
 
   return (
-
+    <>
+      <HeaderSlide/>
       <div className="tab_cont">
         <div className="countries">
             <div className="container">
@@ -55,6 +56,8 @@ function App() {
     </div>
     </div>  
     </div>
+    </>
+      
 
   );
 }

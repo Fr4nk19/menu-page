@@ -6,6 +6,7 @@ import Extras from './Extras';
 import Kids from './Kids';
 import MainDishes from './MainDishes';
 import Salads from './Salads';
+import Sandwiches from './Sandwiches';
 import Soups from './Soups';
 import Tipicos from './Tipicos';
 import Traditional from './Traditional';
@@ -25,6 +26,10 @@ export default function GridMenu() {
 
                  <div className="dish-content">
                   <Traditional/>
+                </div>
+
+                <div className="dish-content">
+                 <Sandwiches/>
                 </div>
 
                  <div className="dish-content">

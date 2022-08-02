@@ -15,6 +15,7 @@ import desert from './assets/images/desert.png';
 import tipico from './assets/images/tipico.png';
 import kid from './assets/images/kids.png';
 import tortilla from './assets/images/tortilla.png';
+import sandwich from './assets/images/sandwich.png';
 
 export default function NavSlider() {
     return (
@@ -66,6 +67,14 @@ export default function NavSlider() {
                 Traditional
            </span></span></SwiperSlide>
 
+           <SwiperSlide><span className="link">
+            <span className='wrap_icon'>
+            <img src={sandwich} alt="soup" />
+            </span>
+           <span className='wrap_text'>
+                Sandwiches
+           </span>
+            </span></SwiperSlide>
             <SwiperSlide><span className="link">
             <span className='wrap_icon'>
             <img src={soup} alt="soup" />

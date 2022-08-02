@@ -1,0 +1,26 @@
+.header_image {
+    position: relative;
+    min-height: 75vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: url(https://www.bocaolas.com/wp-content/uploads/2022/08/SlideMenu-3.jpg);
+    display: flex;
+    align-items: center;
+}
+
+.header_image_content {
+    text-align: center;
+    width: 100%;
+}
+.header_image_content h2 {
+    color: #fff;
+    font-size: 55px;
+}
+
+@media screen and (max-width:768px) {
+    .header_image {
+        min-height: 55vh;
+    }
+}

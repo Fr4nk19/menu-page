@@ -1,6 +1,6 @@
 import React from 'react'
-import washimi from './assets/images/platillos/washimi.png';
-import yuka from './assets/images/platillos/yuka.png';
+const washimi = 'https://www.bocaolas.com/wp-content/uploads/2022/07/washimi.png';
+const yuka = 'https://www.bocaolas.com/wp-content/uploads/2022/07/yuka.png';
 
 
 const defImage = 'https://via.placeholder.com/373x203?text=Feature+Image';

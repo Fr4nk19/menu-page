@@ -1,8 +1,8 @@
 import React from 'react'
-import eloctopus from './assets/images/platillos/eloctopus.png';
-import lomitoPimienta from './assets/images/platillos/lomitopimienta.png';
-import salmon from './assets/images/platillos/salmon.png';
-import udonMar from './assets/images/platillos/udonMar.png';
+const eloctopus = 'https://www.bocaolas.com/wp-content/uploads/2022/07/eloctopus.png'
+const lomitoPimienta = 'https://www.bocaolas.com/wp-content/uploads/2022/07/lomitopimienta.png';
+const salmon = 'https://www.bocaolas.com/wp-content/uploads/2022/07/salmon.png';
+const udonMar = 'https://www.bocaolas.com/wp-content/uploads/2022/07/udonMar.png';
 const defImage = 'https://via.placeholder.com/373x203?text=Feature+Image';
 
 const dishes = [
